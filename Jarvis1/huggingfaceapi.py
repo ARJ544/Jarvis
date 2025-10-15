@@ -1,7 +1,7 @@
 from huggingface_hub import InferenceClient
 
 # Create an InferenceClient with your API key
-client = InferenceClient(api_key="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")
+client = InferenceClient(api_key="api")
 
 # Messages include a system message and a user message
 messages = [
@@ -26,3 +26,4 @@ stream = client.chat.completions.create(
 # Print the generated response as it's streamed
 for chunk in stream:
     print(chunk.choices[0].delta.content, end="")
+
