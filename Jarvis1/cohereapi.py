@@ -1,6 +1,6 @@
 import cohere
 
-co = cohere.ClientV2("FkNCmGQyTnET23r50QwcBP5GJML9rxMD4rNjKuLO")
+co = cohere.ClientV2("api")
 
 # Define the conversation with both user and assistant messages
 conversation = [
@@ -25,3 +25,4 @@ assistant_message = response.message.content[0].text
 
 # Print the assistant's message
 print(assistant_message)
+
