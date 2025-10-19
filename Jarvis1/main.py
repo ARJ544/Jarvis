@@ -13,7 +13,7 @@ from elevenlabs import ElevenLabs
 # Initialize recognizer and text-to-speech engine
 recognizer = sr.Recognizer()
 engine = py3.init()
-news_api = "68fc7be47d7e43cba12cd23e4562c0b1" #myapi
+news_api = "68fc7be47d7apikey62c0b1" #myapi
 # news_api = "d093053d72bc40248998159804e0e67d" #harry's api
 
 # Get the user's name manually
@@ -55,7 +55,7 @@ def speak2(text):
 
 
 ####################################### 11 labs #################################################
-client = ElevenLabs(api_key="sk_eae82656debe55c02f790f25108593b2b694675cf9d21027")
+client = ElevenLabs(api_key="sk_apikey27")
 
 def speak(text):
     try:
@@ -272,3 +272,4 @@ def listen_for_commands():
 if __name__ == "__main__":
     speak("Initializing Chatbot....")
     listen_for_wake_word()  # Start listening for the wake word
+
